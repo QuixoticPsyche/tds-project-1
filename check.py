@@ -18,7 +18,7 @@ def check_rate_limit():
 
 def get_users_in_basel():
     users = []
-    query = "location:Mumbai+followers:>50"
+    query = "location:Delhi+followers:>100"
     page = 1
     per_page = 50  # Reduced per_page size to minimize issues
     total_users = 0
