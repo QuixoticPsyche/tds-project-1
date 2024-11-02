@@ -6,7 +6,7 @@
 This project collected GitHub user data from Basel with the following process:
 
     Authentication: Used a GitHub Personal Access Token (PAT) in request headers for authorization and to avoid rate limits.
-    User Query: Targeted GitHub users located in Basel with more than 10 followers by using the query location:Delhi+followers:>100. Results were limited to 100 users per page (GitHub’s max).    Pagination: To retrieve all qualifying users, the script fetched multiple pages until the API returned no more results.
+    Targeted GitHub users located in Basel with more than 10 followers by using the query location:Delhi+followers:>100. Results were limited to 100 users per page (GitHub’s max).    Pagination: To retrieve all qualifying users, the script fetched multiple pages until the API returned no more results.
 
     Detailed User Information: Additional API requests provided in-depth details about each user, including name, company, and public repositories. For each repository, key details like stars, language, and presence of projects or wikis were collected.
     Data Cleaning: Standardized company names (e.g., removing “@” symbols, converting to uppercase) and handled missing data (e.g., for emails and company names).
